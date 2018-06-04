@@ -1,0 +1,99 @@
+<!--pages/details/details.wxml-->
+
+<view class='details'>
+   <view class='author-focus'>
+      <view class='author'>
+          <image src='/images/ava.jpe'></image>
+          <text>慢点视频</text>
+      </view>
+      <view class='focus'>
+      +关注
+      </view>
+   </view>
+   <text class='detail-title'>《忽而今夏》白宇卜冠今 十年甜酸虐爱</text>
+   <view class='detail-time'>
+    <text>发布： 2018-4-27</text>|
+    <text>播放：11万</text>
+   </view>
+   <view class='detail-label'>
+     <text>创意</text>
+   </view>
+</view>
+<view class='video-operation'>
+   <view class='detail-like'>
+      <image src='/images/like.png'></image>
+      <text>733</text>
+   </view>
+   <view class='detail-collect'>
+      <image src='/images/collect.png'></image>
+      <text>733</text>
+   </view>
+   <view class='detail-comment'>
+      <image src='/images/coments.png'></image>
+      <text>733</text>
+   </view>
+   <view class='detail-share'>
+      <image src='/images/share.png'></image>
+      <text>733</text>
+   </view>
+</view>
+<view class='video-comments'>
+    <text class='good-comment'>精彩评论</text>
+    <view class='single-commment'>
+        <view class='comment-author'>
+            <image src='/images/ava.jpe' class='comment-avatar'></image>
+            <view class='comment-name-like-time'>
+              <view class='comment-like-name'>
+                <text class='author-name'>ylimm</text>
+                <view class='comment-like'>
+                  <text>527</text>
+                  <image src='/images/like.png'></image>
+                </view>
+              </view>
+              <text class='comment-time'>2017年11月22日</text>
+            </view>
+        </view>
+        
+        <view class='comment-text'>
+           <text>每天期待着打开网易云的消息看见陌生人给我点赞可是怎么就是没有呢</text>
+        </view>
+    </view>
+    <view class='single-commment'>
+        <view class='comment-author'>
+            <image src='/images/ava.jpe' class='comment-avatar'></image>
+            <view class='comment-name-like-time'>
+              <view class='comment-like-name'>
+                <text class='author-name'>ylimm</text>
+                <view class='comment-like'>
+                  <text>527</text>
+                  <image src='/images/like.png'></image>
+                </view>
+              </view>
+              <text class='comment-time'>2017年11月22日</text>
+            </view>
+        </view>
+        
+        <view class='comment-text'>
+           <text>每天期待着打开网易云的消息看见陌生人给我点赞可是怎么就是没有呢</text>
+        </view>
+    </view>
+    <view class='single-commment'>
+        <view class='comment-author'>
+            <image src='/images/ava.jpe' class='comment-avatar'></image>
+            <view class='comment-name-like-time'>
+              <view class='comment-like-name'>
+                <text class='author-name'>ylimm</text>
+                <view class='comment-like'>
+                  <text>527</text>
+                  <image src='/images/like.png'></image>
+                </view>
+              </view>
+              <text class='comment-time'>2017年11月22日</text>
+            </view>
+        </view>
+        
+        <view class='comment-text'>
+           <text>每天期待着打开网易云的消息看见陌生人给我点赞可是怎么就是没有呢</text>
+        </view>
+    </view>
+</view>

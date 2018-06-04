@@ -1,0 +1,2 @@
+ <!-- 以下是对一个自定义组件的引用 -->
+  <component-tag-name musicMv="{{musicMv}}"></component-tag-name>

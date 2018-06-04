@@ -1,0 +1,52 @@
+<import src='/pages/details-template/details-template' />
+<template name="video-template">
+<view class='video-introduce {{"myVideo"+index === isShow ? "video-box-fixed":""}}' >
+      <view class='video-box' wx:if="{{videoShowId === index}}">
+          <video  id='{{"video"+index}}'  src='{{url}}' objectFit='cover'>
+           <cover-view class='video-head' wx:if='{{"myVideo"+index != isShow }}'>
+              <cover-view class='video-head-author'>
+                <cover-image class='video-head-author-avatar'  src='{{author.avatar}}'></cover-image>
+                <cover-view class='video-head-author-name'>{{author.name}}</cover-view>
+              </cover-view>
+              <cover-view class='video-label'>{{label[0]}}</cover-view>
+           </cover-view>
+            <cover-view class='return-title' wx:if='{{"myVideo"+index === isShow }}'>
+              <cover-image class="return-title-image" src='/images/return.png' bindtap='returnPage' data-videoId="{{index}}"></cover-image>
+              <cover-view class="return-title-text">{{title}}</cover-view>
+            </cover-view> 
+          </video>
+      </view>
+      <view class='video-curtain' wx:if="{{videoShowId != index}}" >
+         <image class='video-img' src='{{image}}' ></image>
+         <image class='video-play-icon' catchtap='clickShowVideo' src='/images/play.png'  data-id='{{index}}'></image>
+          <view class='netstat-box' wx:if="{{index === netstatId }}">
+             <text class='netstat-play-btn' catchtap='netstatPaly' data-id='{{index}}'>是否流量播放</text>
+          </view>
+          <view class='video-head'>
+              <view class='video-head-author'>
+                <image class='video-head-author-avatar'  src='{{author.avatar}}'></image>
+                <view class='video-head-author-name'>{{author.name}}</view>
+              </view>
+              <view class='video-label'>{{label[0]}}</view>
+           </view>
+           
+      </view>
+      <view class='video-baseinfo' catchtap='onTabDetail' wx:if='{{"myVideo"+index != isShow }}' data-id='{{index}}'>
+         <text class='video-title'>{{title}}</text>
+         <view class='video-like-comment'>
+           <view class='video-like'>
+              <image src='/images/like.png'></image>
+              <text>{{likeAmount}}</text>
+           </view>
+           <view class='video-comment'>
+               <image src='/images/coments.png'></image>
+               <text>{{collectAmount}}</text>
+           </view>
+         </view>
+      </view>
+       <view class='{{"myVideo"+index === isShow ? "show":"hide"}}'>
+          <template is='details-template' data="{{author,title,releaseTime,playAmount,label,likeAmount,collectAmount,shareAmount,comments}}" />
+          
+      </view>  
+   </view>
+   </template>

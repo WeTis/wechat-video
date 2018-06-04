@@ -1,0 +1,66 @@
+<template name="details-template">
+
+<view class='details'>
+   <view class='author-focus'>
+      <view class='author'>
+          <image src='{{author.avatar}}'></image>
+          <text>{{author.name}}</text>
+      </view>
+      <view class='focus'>
+      +关注
+      </view>
+   </view>
+   <text class='detail-title'>{{title}}</text>
+   <view class='detail-time'>
+    <text>发布： {{releaseTime}}</text>|
+    <text>播放：{{playAmount}}</text>
+   </view>
+   <view class='detail-label'>
+     <block wx:for="{{label}}">
+        <text>{{item}}</text>
+     </block>
+   </view>
+</view>
+<view class='video-operation'>
+   <view class='detail-like'>
+      <image src='/images/like.png'></image>
+      <text>{{likeAmount}}</text>
+   </view>
+   <view class='detail-collect'>
+      <image src='/images/collect.png'></image>
+      <text>{{collectAmount}}</text>
+   </view>
+   <view class='detail-comment'>
+      <image src='/images/coments.png'></image>
+      <text>{{comments.num}}</text>
+   </view>
+   <view class='detail-share'>
+      <image src='/images/share.png'></image>
+      <text>{{shareAmount}}</text>
+   </view>
+</view>
+<view class='video-comments'>
+    <text class='good-comment'>精彩评论</text>
+    <block wx:for="{{ comments.commentsList}}">
+      <view class='single-commment'>
+          <view class='comment-author'>
+              <image src='{{item.author}}' class='comment-avatar'></image>
+              <view class='comment-name-like-time'>
+                <view class='comment-like-name'>
+                  <text class='author-name'>{{item.name}}</text>
+                  <view class='comment-like'>
+                    <text>{{item.like}}</text>
+                    <image src='/images/like.png'></image>
+                  </view>
+                </view>
+                <text class='comment-time'>{{item.time}}</text>
+              </view>
+          </view>
+          
+          <view class='comment-text'>
+            <text>{{item.content}}</text>
+          </view>
+      </view>
+    </block>
+</view>
+</template>

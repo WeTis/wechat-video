@@ -1,0 +1,47 @@
+{
+  "pages":[
+   
+    "pages/mv/mv",
+    "pages/gaoxiao/gaoxiao",
+    "pages/movies/movies",
+    "pages/games/games",
+    "pages/details/details"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#C20C0C",
+    "navigationBarTitleText": "短视频",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/mv/mv",
+        "text": "MV",
+        "iconPath":"/images/MV.png",
+        "selectedIconPath":"/images/MV_h.png"
+      },
+      {
+        "pagePath": "pages/gaoxiao/gaoxiao",
+        "text": "搞笑",
+        "iconPath": "/images/gaoxiao.png",
+        "selectedIconPath": "/images/gaoxiao_h.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "/images/movie.png",
+        "selectedIconPath": "/images/movie_h.png"
+      },
+      {
+        "pagePath": "pages/games/games",
+        "text": "游戏",
+        "iconPath": "/images/games.png",
+        "selectedIconPath": "/images/games_h.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+<import src='/pages/video-template/video' />
+<view class='video-list {{pageOverflow ? "":"fixedView"}}'>
+   <view class='video-list'>
+    <block wx:for="{{musicMv}}">
+      <template is='video-template' data="{{...item,index,videoShowId,netstatId,scrollId,isClickPlay,isShow}}" />  
+    </block>
+  </view>
+</view>
+
